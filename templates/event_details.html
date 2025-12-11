@@ -1,1 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Details</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
 
+</head>
+<body>
+    <h1>{{ event[1] }}</h1>
+    <p>Date: {{ event[2] }}</p>
+    <p>Location: {{ event[3] }}</p>
+    <p>Description: {{ event[4] }}</p>
+    <a href="{{ url_for('home') }}">Back to Home</a>
+</body>
+</html>
